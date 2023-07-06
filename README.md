@@ -1,2 +1,56 @@
-# blahojoga_git
-Blahojoga on git version 2.1
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kontaktní formulář</title>
+        <link rel="stylesheet" href="css_form1.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <form id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdh6afyVWdmixlwpW_lQ4MrBasZORI4mGYV4xCsgn2y6oa0vA/formResponse" method="post" onsubmit="submitForm(event)">
+                <h2>Kontakt</h2>
+                <input type="text" id="name" placeholder="Jméno a příjmení" name="entry.264309546" required/>
+                <input type="email" id="email" placeholder="Email" name="entry.2075182072" required/>
+                <input type="text" id="phone" placeholder="Telefonní číslo" name="entry.1845097623"/>
+                <textarea id="message" rows="4" placeholder="Co máte na srdci?" name="entry.760436833"></textarea>
+                <button type="submit">Poslat</button>
+            </form>
+            <div id="thanks" style="display: none;">
+                <h3 class="thanks">Děkujeme za odeslání formuláře!</h3>
+                <button class="returnButton" onclick="resetForm()">Poslat znovu</button>
+            </div>
+        </div>
+
+        <script>
+
+            function submitForm(event) {
+                event.preventDefault(); // Prevent form submission
+
+                var form = document.getElementById('contactForm');
+                var formData = new FormData(form);
+
+                // Perform AJAX request to submit form data
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', form.action);
+                xhr.send(formData);
+
+                // Hide the form and show the "thanks" message
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('thanks').style.display = 'block';
+            }
+
+            function resetForm() {
+                var form = document.getElementById('contactForm');
+                var formElements = form.elements;
+
+
+                // Hide the "thanks" message
+                document.getElementById('thanks').style.display = 'none';
+
+                // Reset form display and CSS properties
+                form.style.display = 'block';
+                form.reset();
+                form.style.cssText = '';
+            }
+        </script>
+    </body>
+</html>
