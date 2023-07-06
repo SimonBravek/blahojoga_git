@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    background: #faf0ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color:#faf0ca;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+.thanks{
+
+    background: #ee6055;
+    color: #faf0ca;
+    font-size: 20px;
+
+    outline: none;
+
+    text-align: center;
+    width: 400px;
+
+    margin: 30px auto 0;
+    margin-bottom: 40px;
+
+    border: o;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+
+    padding: 20px;
+}
+form{
+    background: #ee6055;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 20px 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    outline:none;
+    background: #faf0ca;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-border-radius: px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+form button{
+    padding: 15px;
+    background: #bccf3f;
+    color: #0d3b66;
+    font-size: 18px;
+    border: o;
+    outline: none;
+    cursor: pointer;
+
+    width: 150px;
+    margin: 30px auto 0;
+    
+    margin-bottom: 40px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+input::placeholder, textarea::placeholder{
+    color: #0d3b66;
+}
+.returnButton{
+    padding: 10px;
+    background: #bccf3f;
+    color: #0d3b66;
+    font-size: 16px;
+    border: o;
+    outline: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 150px;
+    margin: 30px auto 0;
+    
+    margin-bottom: 40px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
