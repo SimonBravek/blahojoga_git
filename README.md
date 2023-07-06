@@ -1,3 +1,3 @@
 Hello
 theres the right URL:
-<a>https://simonbravek.github.io/blahojoga_git/thx_reset.html</a>
+<a src="https://simonbravek.github.io/blahojoga_git/thx_reset.html">click me!</a>
